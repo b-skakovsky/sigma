@@ -1,0 +1,123 @@
+footer{
+	background: #E5E5E5;
+	padding: 50px 0;
+	margin-top: 70px;
+	.logo-footer{
+		a{
+				margin: 0;
+				padding: 0;
+				line-height: 0;
+		}
+		p{
+			font-size: 12px;
+			margin: 0;
+		}
+	}
+	.footer-nav-item{
+		h2{
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 16px;
+			margin: 15px 0 0 0;
+		}
+		h3{
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 20px;
+			margin: 0;
+		}
+		hr{
+			color: #0133A4;
+    	margin: 20px 0;
+    	border: none;
+    	background-color: #0133A4;
+    	height: 2px;
+		}
+		ul{
+
+			li{
+				list-style-type: none;
+				margin: 14px 0;
+				a{
+					color: #444245;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.footer-contact{
+			.btn-popup-footer{
+				font-weight: normal;
+				color: $blue;
+				font-weight: 400;
+				text-decoration: underline;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			a{
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 20px;
+				color: #444245;
+				text-decoration: none;
+			}
+		}
+		.block-address-footer,
+		.block-email-footer{
+			margin: 20px 0;
+			a{
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: normal;
+				text-decoration: none;
+				span{
+					margin: 0 5px 0 0;
+				}
+			}
+		}
+		.block-social-footer{
+			display: flex;
+			a{
+				background: rgba(68, 66, 69, 0.75);
+				height: 17px;
+				width: 17px;
+				display: flex;
+				font-weight: 200;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				margin: 0 10px 0 0;
+				color: #ffffff;
+				font-size: 11px;
+				text-decoration: none;
+			}
+		}
+	}
+	.copy{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 65px;
+		p{
+			font-size: 14px;
+			line-height: 26px;
+			color: rgba(68, 66, 69, 0.5);
+		}
+		.copy-studio{
+			a{
+				display: flex;
+				font-size: 14px;
+				line-height: 26px;
+				align-items: center;
+				color: rgba(68, 66, 69, 0.5);
+				text-decoration: none;
+				img{
+					margin: 0 0 0 10px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+.administration-text{
+	p{
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 30px;
+		color: #000000;
+	}
+}
+.administration-tab-top{
+	margin-bottom: 50px;
+}
+.top-table{
+	border: 1px solid #0133A4;
+	border-top: none;
+	p{
+		font-size: 14px;
+		line-height: 20px;
+		color: #000000;
+		padding: 15px 10px;
+	}
+}
+.top-table-border{
+	border-top:1px solid #0133A4;
+}
+.center-block-tab{
+	border-left: 1px solid #0133A4;
+	border-right: 1px solid #0133A4;
+}
+.no-border{
+	border-left: none;
+}
+.no-border-top{
+	border-top: none;
+}

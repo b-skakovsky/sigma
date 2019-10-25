@@ -1,0 +1,77 @@
+.filter {
+  display: none;
+}
+#myBtnContainer{
+  margin-bottom: 40px;
+}
+.filters-block{
+	display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.show {
+  display: block;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 15px 18px;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  transition:all 0.5s;
+  background: none;
+}
+.btn:hover {
+  background-color: #0133A4;
+  color: #ffffff;
+}
+.btn.actives {
+  background-color: #0133A4;
+  color: white;
+}
+.filter-item-block{
+  max-width: 260px;
+  position: relative;
+  background: #EEEEEE;
+  padding: 0 0 10px 0;
+  margin-bottom: 25px;
+}
+.filter-img{
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  max-width: 270px 
+}
+.filter-top-title{
+  p{
+    position: absolute;
+    top:15px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    background: #FF8025;
+    padding:10px 15px;
+    color: #ffffff;
+  }
+}
+.filter-item-title{
+  p{
+    background: #0133A4;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+  }
+}
+.fotorama__nav
+{
+  text-align: left; 
+}
+.fotorama__nav
+{
+  text-align: right; 
+}

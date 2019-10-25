@@ -1,0 +1,366 @@
+.hidden{
+  display: none;
+}
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+#form{
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 30px;
+  h2{
+  	font-weight: 600;
+		font-size: 24px;
+		line-height: 28px;
+		color: #444245;
+  }
+  p{
+  	font-size: 16px;
+		line-height: 25px;
+		color: #444245;
+		margin: 30px 0;
+		padding: 0 80px 0 0;  
+  }
+  .form-user-info{
+		display: flex;
+		justify-content: space-between;
+		.form-user-name,
+		.form-user-phone{
+			p{
+				color: #444245;
+				font-size: 12px;
+				line-height: 17px;
+				margin: 0 0 3px 0;
+			}
+			input{
+				width: 250px;
+				height: 50px;
+				border: 1px solid #0133A4;
+				padding: 0 30px;
+			}
+		}
+	}
+	.form-user-btn{
+		display: flex;
+		justify-content: flex-end;
+		a{
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 17px;
+			background: #0133A4;
+			border: 1px solid #0133A4;
+			padding: 20px 0;
+			color: #ffffff;
+			width: 250px;
+			text-align: center;
+			margin: 20px 0 0 0;
+		}
+	}
+}
+#popu-room-search{
+  position: relative;
+  margin: 0 auto;
+  max-width: 1140px;
+  background: #ffffff;
+  height: 600px;
+  display: flex;
+}
+.tab-popup {
+  float: left;
+  border: 1px solid #0133A4;
+  border-left: none;
+  width: 20%;
+  margin: 0 20px 0 0;
+}
+
+/* Style the buttons inside the tab */
+.tab-popup button {
+  display: block;
+  color: black;
+  padding: 22px 36px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #444245;
+  font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	height: 186px;
+	border-bottom: 1px solid #0133A4;
+	background: #ffffff;
+	p{
+		margin: 10px 0 0 0;
+		font-weight: normal;
+		font-size: 16px;
+	}
+}
+
+/* Change background color of buttons on hover */
+.tab-popup button:hover {
+  background-color: #0133A4;
+  color: #ffffff;
+}
+.tab-popup  .active {
+  color: #ffffff;
+  background: #0133A4;
+}
+.step-title{
+	p{
+		font-size: 24px;
+		line-height: 28px;
+		padding: 20px;
+		display: block;
+	}
+}
+.step-btn{
+	.step-active{
+		background: #0133A4;
+		color: #ffffff;
+	}
+	a{
+		font-size: 14px;
+		line-height: 16px;
+		transition: all 0.5s;
+		padding: 10px 40px;
+		text-decoration: none;
+		color: #444245;
+		margin: 0 10px 0 0;
+		&:hover{
+			background: #0133A4;
+			color: #ffffff;
+		}
+	}
+}
+.step-object{
+	display: flex;
+	flex-wrap: wrap;
+	.object-item{
+		margin: 20px 20px 0 0;
+	}
+	.object-img{
+		width: 180px;
+		height: 140px;
+	}
+	.object-title{
+		width: 180px;
+	}
+}
+/* Style the tab content */
+// .tabcontent {
+//   float: left;
+//   border-left: none;
+// }
+.parent, .child {
+  display:none;
+}
+
+.parent.active, .child.active {
+  display: block;
+
+}
+
+.tablink.active, .subtablink.active {
+  background: #0133A4;
+  color: #ffffff;
+  font-weight: bold;
+	font-size: 14px;
+	line-height: 28px;
+}
+.tablink.active, .subtablink.active span{
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: bold;
+}
+.tabs{
+	display: flex;
+	flex-direction: column;
+	width: 230px;
+	height: 100%;
+	align-items: flex-center;
+	justify-content: space-around;
+}
+.tabs{
+	button{
+		height: 100%;
+		width: 100%;
+		border: none;
+		cursor: pointer;
+		border: 1px solid #0133A4;
+		border-top:none;
+		background: none;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 28px;
+		text-align: left;
+		padding: 10px;
+		span{
+		font-size: 24px;
+		line-height: 28px;
+		}
+	}
+}
+.tabs-link-title{
+	margin: 30px 0 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 850px;
+	h2{
+		font-size: 24px;
+		line-height: 28px;
+	}
+	a{
+		font-size: 14px;
+		line-height: 16px;
+		text-decoration-line: underline;
+		color: #0133A4;
+	}
+}
+.tabs-link{
+	margin: 0 30px;
+	width: 800px;
+}
+.tabs-under-btn{
+	margin: 20px 0 40px 0;
+
+	button{
+		border: none;
+		font-size: 14px;
+		line-height: 16px;
+		background: none;
+		width: 150px;
+		height: 50px;
+		cursor: pointer;
+	}
+	.active{
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+.tabs-item-project{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px 0 0 0;
+
+}
+.tabs-item{
+	position: relative;
+	margin: 0 20px 20px 0;
+}
+.tabs-item-type{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	p{
+		background: #FF8025;
+		font-weight: bold;
+		font-size: 10px;
+		line-height: 12px;
+		padding: 5px 10px;
+		color: #ffffff;
+	}
+}
+// .tabs-item-desc{
+// 	background: #0133A4;
+// 	text-align: center;
+// 	p{
+// 		text-transform: uppercase;
+// 		font-size: 10px;
+// 		line-height: 20px;
+// 		color: #ffffff;
+// 		padding: 10px 0; 
+// 	}
+// }
+.tabs-item-title{
+	background: #0133A4;
+	text-align: center;
+	p{
+		text-transform: uppercase;
+		font-size: 10px;
+		line-height: 20px;
+		color: #ffffff;
+		padding: 10px 0; 
+	}
+}
+.tabs-item-img{
+	width: 180px;
+	height: 120px;
+	background-size: cover;
+	background-position: center;
+}
+.calculator-popup{
+	display: flex;
+	width: 830px;
+	margin-top: 20px;
+	.room-total-item h2{
+		padding: 10px 0 10px 0;
+	}
+	.textinputs{
+		padding: 0 0 15px 0;
+	}
+}
+.room-height{
+	height: 300px;
+}
+.room-total-item {
+	margin: 0 20px 0 0;
+}
+.height-mini{
+	height: 150px;
+}
+.object-room-popup{
+	display: flex;
+	.carousel-room-item{
+		margin: 0 20px 0 0;
+	}
+}
+.tabs-link-btn{
+	text-align: center;
+	margin: 0 auto;
+	a{
+		margin: 20px auto 0 auto;
+		color: #0133A4;
+		border: 1px solid #0133A4;
+		width: 255px;
+		height: 40px;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 17px;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.5s;
+		&:hover{
+			background: #0133A4;
+			color: #ffffff;
+		}
+	}
+}

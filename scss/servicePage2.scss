@@ -1,0 +1,134 @@
+.contract-text{
+	h2{
+		font-size: 36px;
+		line-height: 42px;
+		font-weight: 500;
+		margin: 20px 0 30px 0;
+	}
+	p{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	h3{
+		font-size: 14px;
+		line-height: 20px;
+		margin: 30px 0;
+	}
+	ul{
+		li{
+			list-style-type: none;
+			font-size: 14px;
+			line-height: 20px;
+			position: relative;
+			margin: 0 0 20px 10px;
+			&:before{
+				content: '';
+				position: absolute;
+				width: 5px;
+				top: 10px;
+				left: -10px;
+				height: 5px;
+				background: #444245;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+.contact-item{
+	background: #EEEEEE;
+	padding: 25px;
+	min-height: 400px;
+	h2{
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+	}
+	ol{
+		li{
+			font-size: 14px;
+			line-height: 20px;
+			margin: 20px 0 0 18px;
+		}
+	}
+}
+.contract-ready-item{
+	background: #FFFFFF;
+	box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.25);
+	max-width: 570px;
+	height: 700px;
+	margin: 0 auto;
+	padding: 70px 30px;
+	h2{
+		text-align: center;
+	}
+	.big-line{
+		height: 1px;
+		display: block;
+		background: #000000;
+		width: 100%;
+		margin: 50px 0;
+	}
+	.small-line-item{
+		display: flex;
+		justify-content: space-between;
+		.small-line{
+			height: 1px;
+			background: #000000;
+			width: 45%;
+		}
+	}
+	.line-one-right{
+		display: flex;
+		justify-content: flex-end;
+		margin: 50px 0;
+		.line-one-right{
+			height: 1px;
+			background: #000000;
+			width: 45%;
+		}
+	}
+}
+.btn-dowloand{
+	text-align: center;
+	font-size: 14px;
+	line-height: 16px;
+	margin: 15px 0 50px 0;
+	a{
+		color: #0133A4;
+	}
+}
+.price-contract{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+	.price-contract-item{
+		p{
+			font-size: 18px;
+			line-height: 25px;
+			span{
+				font-size: 24px;
+				color: #0133A4;
+				font-weight: bold;
+			}
+		}
+	}
+	.price-contract-btn{
+		a{
+			color: #ffffff;
+			padding: 10px 40px;
+			background: #0133A4;
+			border: 1px solid #0133A4;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 17px;
+			text-decoration: none;
+			margin: 0 0 0 30px;
+			transition: all 0.3s;
+			&:hover{
+				background: none;
+				border: 1px solid #0133A4;
+				color: #0133A4;
+			}
+		}
+	}
+}

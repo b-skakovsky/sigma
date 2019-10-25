@@ -1,0 +1,265 @@
+.room-total-item{
+	width: 260px;
+	background: #EEEEEE;
+	padding: 0 20px;
+	margin-bottom: 20px;
+	.room-block-desc{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	h2{
+		font-size: 14px;
+		line-height: 16px;
+		padding: 20px 0 20px 0;
+		font-weight: normal;
+		span{
+			i{
+				transform: rotate(90deg);
+				color: #0133A4;
+				margin: 0 10px 0 10px;
+				font-size: 10px;
+			}
+		}
+	}
+	p{
+		color: #C4C4C4;
+		transition: all 0.5s;
+		width: 70px;
+		font-size: 12px;
+		line-height: 24px;
+	}
+	.check-block input:checked + p{
+		color:#212121;
+	}
+	.checkmark{
+		border: none;
+		background: #ffffff;
+	}
+}
+.item-total{
+	display: flex;
+	justify-content: center;
+	margin: 0 0 20px 0;
+	input{
+		width: 100px;
+		height: 40px;
+		font-size: 12px;
+		line-height: 14px;
+		color: #444245;
+		border: none;
+		background: #ffffff;
+		margin: 0 20px 0 0;
+		padding: 0 25px;
+		position: relative;
+	}
+	.min{
+		position: relative;
+		&::after{
+			content: '₽';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			right: 27px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+		&::before{
+			content: 'от';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			left: 5px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+	.max{
+		position: relative;
+		&::after{
+			content: '₽';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			right: 27px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+		&::before{
+			content: 'до';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			left: 5px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+	.min-room{
+		position: relative;
+		&::after{
+			content: 'м² ';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			right: 27px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+		&::before{
+			content: 'от';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			left: 5px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+	.max-room{
+		position: relative;
+		&::after{
+			content: 'м² ';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			right: 27px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+		&::before{
+			content: 'до';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			left: 5px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+	.min-floor{
+		position: relative;
+		&::after{
+			content: 'эт  ';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			right: 27px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+		&::before{
+			content: 'от';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			left: 5px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+	.max-floor{
+		position: relative;
+		&::after{
+			content: 'эт';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			right: 27px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+		&::before{
+			content: 'до';
+			top: 13px;
+			position: absolute;
+			z-index: 90;
+			left: 5px;
+			color: #C4C4C4;
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+}
+#price-range,
+#room-range,
+#floor-range{
+	width: 210px;
+	margin: 40px 5px 0 5px;
+}
+.textinputs{
+	padding: 0 0 40px 0;
+}
+.item-room{
+	width: 260px;
+}
+.carousel-room-img{
+	width: 270px;
+	height: 250px;
+	background-size: cover;
+	background-position: center
+}
+.more{
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0 60px 0;
+}
+.more-btn{
+	a{
+		text-decoration: none;
+		color: #ffffff;
+		padding: 10px 40px;
+		background: #0133A4;
+		border:1px solid #0133A4;
+		transition: all 0.5s;
+		outline: none;
+		display: flex;
+		&:hover{
+			background: none;
+			color: #0133A4;
+		}
+	}
+}
+.page-mone{
+	ul{
+		li{
+			list-style-type: none;
+			display: inline-block;
+			border: 1px solid #0133A4;
+			margin: 0 0 0 20px;
+			a{
+				height: 40px;
+				width: 40px;
+				text-decoration: none;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #000000;
+				transition: all 0.5s;
+				&:hover{
+					background: #0133A4;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
+.filter-item-block{
+	position: relative;
+	a{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+}
